@@ -6,9 +6,8 @@
 
 ### Tools
 
-This course is recorded with the following tools, you can optionally follow along using the same, or your favourite text editor/IDE and browser.
-
 *Text editor*: Visual Studio Code, you can [download it here](http://code.visualstudio.com) for both Mac, Windows and Linux.
+
 *Browser*: Google Chrome, you can [download it here](https://www.google.com/chrome)
 
 ### Prerequisites
@@ -26,7 +25,7 @@ npm install -g node-sass
 
 ### Project Install
 
-To grab the seed project, either Fork this repo or [click here to download](https://github.com/UltimateAngular/angular-fundamentals-seed/archive/master.zip) the `.zip` folder and extract the files wherever you like on your machine.
+To grab the seed project, either Fork this repo or download the `.zip` folder and extract the files wherever you like on your machine.
 
 #### Step 1: Package Manager
 
