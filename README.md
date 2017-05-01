@@ -1,6 +1,6 @@
 # Angular Fundamentals
 
-> This is the seed project for the [Angular Fundamentals](https://ultimateangular.com/courses/#angular-2) course.
+> 
 
 ## Project Setup and Tooling
 
