@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   template: `
     <div class="app">
       <button (click)="handleClick()">Change Name</button>
-      <input type="text" 
+      <input type="text"
              [value]="name"
-             (input)="handleBlur($event)"
+             (input)="handleInput($event)"
              (blur)="handleBlur($event)"
              >
       <div> Name = {{ name }} </div>
