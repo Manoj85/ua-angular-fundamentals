@@ -9,8 +9,14 @@ import { Component } from '@angular/core';
              [value]="name"
              (input)="handleChange($event.target.value)"
              >
+      <template [ngIf]="name.length > 2">
+        <div> 
+          <span> Using Template </span> : Searching for ... {{ name }} 
+        </div>
+      </template>
+      
       <div *ngIf="name.length > 2"> 
-        Searching for ... {{ name }} 
+        <span> Using *ngIf </span> : Searching for ... {{ name }} 
       </div>
     </div>
   `
