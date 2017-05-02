@@ -11,14 +11,33 @@ interface Passenger {
   styleUrls: ['./app.component.scss'],
   template: `
     <div class="app">
-      <h3> Airline passengers </h3>
+      <h3> Airline passengers (using [class])</h3>
       <ul>
         <li *ngFor="let passenger of passengers; let i = index">
-          <span class="status"></span>
+          <span 
+            class="status"
+            [class.checked-in]="passenger.checkedIn"
+            >
+          </span>
           Index {{i}} - {{ passenger.id }} : {{ passenger.fullname }}
         </li>
       </ul>
       <hr/>
+
+      <h3> Airline passengers (using [ngClass])</h3>
+      <ul>
+        <li *ngFor="let passenger of passengers; let i = index">
+          <span 
+            class="status"
+            [ngClass]="{
+              'checked-in': passenger.checkedIn,
+              'checked-out': !passenger.checkedIn
+            }"
+            >
+          </span>
+          Index {{i}} - {{ passenger.id }} : {{ passenger.fullname }}
+        </li>
+      </ul>
       
     </div>
   `
