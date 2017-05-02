@@ -14,18 +14,12 @@ interface Passenger {
       <h3> Airline passengers </h3>
       <ul>
         <li *ngFor="let passenger of passengers; let i = index">
+          <span class="status"></span>
           Index {{i}} - {{ passenger.id }} : {{ passenger.fullname }}
         </li>
       </ul>
       <hr/>
-      <h3> Airline passengers (using ng-template)</h3>
-      <ul>
-        <ng-template ngFor let-passenger let-i="index" [ngForOf]="passengers">
-          <li>
-            Index {{i}} - {{ passenger.id }} : {{ passenger.fullname }}
-          </li>
-        </ng-template>
-      </ul>
+      
     </div>
   `
 })
